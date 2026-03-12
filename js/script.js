@@ -14,7 +14,7 @@ class Dashboard {
   }
 
   async getData() {
-    const response = await fetch("/data/data.json");
+    const response = await fetch("./data/data.json");
     return await response.json();
   }
 
@@ -66,7 +66,7 @@ class ActivityCard {
     activityCard.className = `activity-card ${titleLowerCase.replace(" ", "-")}`;
 
     activityCard.innerHTML = `
-     <img src="/images/icon-${titleLowerCase.replace(" ", "-")}.svg" alt="${titleLowerCase} icon" />
+     <img src="./images/icon-${titleLowerCase.replace(" ", "-")}.svg" alt="${titleLowerCase} icon" />
        <section class="activity-card__content">
         <header class="activity__header">
           <p class="activity__name">${title}</p>
@@ -114,7 +114,7 @@ class UserCard {
 
     userCard.innerHTML = `
       <header class="user__header">
-        <img src="/images/image-jeremy.png" alt="" />
+        <img src="./images/image-jeremy.png" alt="" />
         <div class="user__info">
           <p class="user__label">Report for</p>
           <h1 class="user__name">Jeremy Robson</h1>
