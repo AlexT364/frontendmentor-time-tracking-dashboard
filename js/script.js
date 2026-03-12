@@ -71,7 +71,7 @@ class ActivityCard {
         <header class="activity__header">
           <p class="activity__name">${title}</p>
           <button class="activity__btn">
-            <img src="/images/icon-ellipsis.svg" alt="" />
+            <img src="./images/icon-ellipsis.svg" alt="" />
           </button>
         </header>
         <div class="activity__time">
